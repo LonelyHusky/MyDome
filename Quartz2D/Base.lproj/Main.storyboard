@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="weZ-AQ-O6c">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="V3p-a5-44t">
+            <objects>
+                <navigationController id="weZ-AQ-O6c" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LL1-Qw-89g">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="nP1-MB-Jh8" kind="relationship" relationship="rootViewController" id="qWq-yN-77C"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ti7-8A-BTe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-669.5" y="385.5"/>
+        </scene>
+        <!--Gesture Password Controller-->
+        <scene sceneID="Yhz-jp-nqK">
+            <objects>
+                <viewController id="nP1-MB-Jh8" customClass="GesturePasswordController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="w2I-ai-lnZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="cDO-Vn-3g1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tUT-dz-j9T">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gYk-WV-FrI"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="im8-Ut-x0W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-233.5" y="385.5"/>
+        </scene>
+        <!--Drawing Board Controller-->
+        <scene sceneID="Izx-w3-Rat">
+            <objects>
+                <viewController storyboardIdentifier="image" id="u52-lK-h4W" customClass="DrawingBoardController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="F3z-ng-bfn"/>
+                        <viewControllerLayoutGuide type="bottom" id="dZY-Il-YJM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Mup-tS-yx4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o61-NM-0hU">
+                                <rect key="frame" x="0.0" y="585" width="375" height="82"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4SX-Zk-IJ6">
+                                        <rect key="frame" x="135" y="44" width="100" height="30"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="didClickColorButton:" destination="u52-lK-h4W" eventType="touchUpInside" id="GMm-Tl-5O4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ksL-pr-16F">
+                                        <rect key="frame" x="263" y="44" width="100" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="didClickColorButton:" destination="u52-lK-h4W" eventType="touchUpInside" id="EYb-bl-pUA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hUt-Lh-mZt">
+                                        <rect key="frame" x="8" y="44" width="100" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didClickColorButton:" destination="u52-lK-h4W" eventType="touchUpInside" id="BVW-fG-200"/>
+                                        </connections>
+                                    </button>
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="50" translatesAutoresizingMaskIntoConstraints="NO" id="VG2-Ba-So0">
+                                        <rect key="frame" x="10" y="6" width="355" height="31"/>
+                                        <connections>
+                                            <action selector="sliderValueChanged:" destination="u52-lK-h4W" eventType="valueChanged" id="l6A-2S-90V"/>
+                                        </connections>
+                                    </slider>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YTd-s2-bW0" customClass="DrawingBoardView">
+                                <rect key="frame" x="0.0" y="43" width="375" height="541"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="leo-vN-lyb">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem title="回退" id="I3A-QW-6eR"/>
+                                    <barButtonItem title="清屏" id="DEJ-jE-F8Q">
+                                        <connections>
+                                            <action selector="clear:" destination="u52-lK-h4W" id="5cl-zE-sPp"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="橡皮擦" id="aq7-Xg-cqM">
+                                        <connections>
+                                            <action selector="rubber:" destination="u52-lK-h4W" id="f95-3M-S0h"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="照片" id="sNW-2Y-NMn">
+                                        <connections>
+                                            <action selector="photo:" destination="u52-lK-h4W" id="SNv-lT-mgM"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="XNa-cA-uMG"/>
+                                    <barButtonItem title="保存" id="sgt-Od-V92"/>
+                                    <barButtonItem title="退出" id="Vhe-DQ-9ND">
+                                        <connections>
+                                            <action selector="leave:" destination="u52-lK-h4W" id="l4O-Ci-s3N"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="drawRegion" destination="YTd-s2-bW0" id="hne-Bt-FVK"/>
+                        <outlet property="redButton" destination="hUt-Lh-mZt" id="69J-R2-XbC"/>
+                        <outlet property="slider" destination="VG2-Ba-So0" id="e2A-aX-q2f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="geT-iX-R0D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="317.5" y="369.5"/>
+        </scene>
+    </scenes>
+</document>

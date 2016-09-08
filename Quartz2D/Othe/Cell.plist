@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Items</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>满天星</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>绘画板</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>毛毛虫</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>Items</key>
+		<array>
+			<dict>
+				<key>title</key>
+				<string>打飞机(未完成)</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>打地鼠(未开始)</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>见缝插针(未开始)</string>
+			</dict>
+			<dict>
+				<key>title</key>
+				<string>愤怒的小鸟</string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>
